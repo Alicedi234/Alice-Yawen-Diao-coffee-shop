@@ -1,0 +1,260 @@
+
+
+.hero {
+  position: relative;
+  background-color: #FFF0ED;
+  height: 90rem;
+  background-position: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hero__content {
+  width: 20%;
+  font-weight: 200;
+}
+
+.hero__img {
+  height: 76rem;
+}
+
+
+
+
+
+
+
+.hero__button {
+  background-color: #5BACC3;
+  color: white;
+  width: 26rem;
+  font-size: 3.5rem;
+  height: 7rem;
+  text-align: center;
+  margin-top:20px;
+}
+
+
+.card__headline {
+  text-align: center;
+  background-color: #F7F7F7;
+}
+
+.product {
+  background-color: peru;
+  background-position: cover;
+  list-style: none;
+}
+
+.card__container {
+  height: 66rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #F7F7F7;
+  align-items: center;
+
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px -1px rgba(109, 103, 103, 0.25);
+  width: 38rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 53rem;
+  margin: 20px;
+
+}
+
+.card__content {
+  background-color: #FFF0ED;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 5px 9px -1px rgba(109, 103, 103, 0.25);
+  text-align: center;
+  font-weight: 200;
+  height: 16rem;
+  display: flex;
+  margin-top: 29px;
+
+}
+
+.card__list {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+  list-style-type: none;
+  display: flex;
+  font-size: 3rem;
+  margin-left: 8px;
+  align-items: center;
+}
+
+.card__list {
+  text-align: left;
+}
+
+.card__list--word {
+  font-size: 2.5rem;
+  font-weight: 100;
+  color:#909090;
+}
+
+.card__list--price {
+  font-size: 2.5rem;
+  margin-left: 20px;
+  font-size: 4rem;
+  color: #5BACC3;
+  font-weight:700;
+}
+
+.card__img {
+  height: 32rem;
+  padding-top: 15px;
+}
+
+.button__container{
+  text-align: center;
+  background-color: #F7F7F7;
+}
+
+
+.product__button {
+  background-color: #5BACC3;
+  color: white;
+  width: 26rem;
+  font-size: 3.5rem;
+  height: 7rem;
+}
+
+.article{
+  background-color: white;
+  height:130rem;
+  display: column;
+  justify-content:space-between;
+
+  
+}
+.content__container{
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  height:80rem;
+}
+
+.content__pic--container{
+  background-image: url(../assets/images/coldbrewbackground.png);
+  width:200px;
+  height:200px;
+  background-size: contain;
+  background-position: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.content__picture{
+height:40rem;
+text-align: center;
+}
+
+.content__desc{
+  background-color: white;
+  width:40%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:2rem;
+
+
+}
+
+.content__desc--text{
+  width:80%;
+  margin-top:2.5rem;
+}
+
+.content__desc--image{
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+.content__desc--img{
+  height:7rem;
+ 
+}
+
+
+.middle{
+  padding-left:25%;
+  padding-right:25%;
+  
+}
+
+
+.button{
+  background-color: #5BACC3;
+  color: white;
+  width: 26rem;
+  font-size: 3rem;
+  height: 7rem;
+}
+
+
+
+.content__banner--container{
+display:flex;
+justify-content: center;
+align-items: center;
+height: 40rem;
+}
+
+
+.content__banner {
+  background-color: #393939;
+  color: white;
+  text-align: center;
+  width: 85%;
+  padding:20px;
+  height: 16rem;
+  /* padding-top: 1.5rem; */
+  font-size: 50rem;
+
+}
+ 
+.content__banner--text{
+  font-size: 6rem;
+}
+
+
+.footer {
+  background-color:#FFF0ED;
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+
+}
+
+.footer__element{
+text-align:left;
+}
+
+.footer__element--header{
+  margin-bottom: 10px;
+}
+
+
+.footer__resize--image{
+  width: 5rem;
+  margin: 0;
+  height: 4.5rem;
+}
