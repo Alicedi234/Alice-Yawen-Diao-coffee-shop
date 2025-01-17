@@ -24,7 +24,7 @@
   height: 30rem;
   width:45rem;
   position: absolute;
-  top: -18px; /* 外边框偏移 */
+  top: -18px;
   left: -17px;
   border: 5px solid #5BACC3 ; 
   content:"";
