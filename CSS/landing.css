@@ -148,8 +148,8 @@
 
 .content__pic--container{
   background-image: url(../assets/images/coldbrewbackground.png);
-  width:200px;
-  height:200px;
+  width:60rem;
+  height:60rem;
   background-size: contain;
   background-position: center;
   display:flex;
