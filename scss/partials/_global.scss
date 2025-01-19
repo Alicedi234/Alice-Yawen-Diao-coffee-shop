@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  /* Default browser value */
+
 }
 
 * {
@@ -10,12 +10,11 @@ html {
 }
 
 body {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 400;
-
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -29,7 +28,6 @@ h2 {
   font-weight: 300;
 }
 
-
 h3 {
   font-size: 4rem;
   font-weight: 300;
@@ -39,6 +37,7 @@ p {
   font-size: 3rem;
   font-weight: 400;
 }
+
 .header {
   display: flex;
   flex-direction: row;
@@ -58,9 +57,9 @@ p {
 nav__list--highlight {
   color: #5BACC3;
 }
-.header__list--container{
-  width:100%;
-  display:flex;
-  justify-content: end;
 
+.header__list--container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }
