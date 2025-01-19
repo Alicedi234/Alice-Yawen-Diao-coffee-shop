@@ -1,0 +1,31 @@
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin button-style {
+  background-color: $primary-color1;
+  color: $secondary-color4;
+  width: 26rem;
+  font-size: 3.5rem;
+  height: 7rem;
+}
+
+@mixin size($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin background-style {
+  background-position: center;
+  background-size: cover;
+}
+
+// New mixin for padding and border
+@mixin padding-border($padding-v: 0.5rem, $padding-h: 3.5rem, $border-width: 0.7rem, $border-color: $primary-color1) {
+  padding: $padding-v $padding-h;
+  border-left: $border-width solid $border-color;
+  border-right: $border-width solid $border-color;
+}

@@ -8,7 +8,7 @@
         rel="stylesheet">
     <title>Coffee Shop - Home</title>
  
-    <link rel="stylesheet" href="./scss/landing.css">
+    <link rel="stylesheet" href="./styles/landing.css">
 </head>
 
 <body>
@@ -18,17 +18,17 @@
         <a href="./index.html">
             <img src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bean logo" class="header__logo">
         </a>
-        <h2 class="header__title">nitro</h2>
-        <div class="header__list--container">
+        <h2>nitro</h2>
+        <div class="header__nav--container">
         <ul class="header__nav">
-            <li class="nav__list">
-                <a href="./index.html">ABOUT</a>
+            <li>
+                <a href="../index.html">ABOUT</a>
             </li>
-            <li class="nav__list">
-                <a href="./pages/menu.html">MENU</a>
+            <li >
+                <a href="./menu.html">MENU</a>
             </li>
-            <li class="nav__list nav__list--highlight">
-                <a href="./pages/menu.html" >SHOP NOW</a>
+            <li>
+                <a href="./menu.html" class="header__nav--highlight">SHOP NOW</a>
             </li>
         </ul>
     </div>
@@ -43,7 +43,14 @@
                     of berries from
                     centain coffee
                     species.</p>
+                 
+                    
+                <div class="hero__button--container">
                 <button class="hero__button"><a href="./pages/menu.html">SHOP NOW</a></button>
+                <div class="hero__button--frame"></div>
+                </div>
+
+
             </div>
 
             <div>
@@ -67,7 +74,7 @@
                                 <h3 class="card__list--name">Coffee Beans</h3>
                                 <p class="card__list--word">Pack of 3</p>
                             </li>
-                            <li class="card__list--price" style="font-size: 4rem">$19</li>
+                            <li class="card__list--price">$19</li>
                         </ul>
                     </div>
                 </div>
@@ -84,7 +91,7 @@
                                 <h3 class="card__list--name">Cold Brew</h3>
                                 <p class="card__list--word">1 can</p>
                             </li>
-                            <li class="card__list--price" style="font-size: 4rem">$5
+                            <li class="card__list--price">$5
                             </li>
                         </ul>
                     </div>
@@ -106,20 +113,19 @@
                         </ul>
                     </div>
                 </div>
-
-
-
-            </div>
-            <div class="button__container">
-                <button class="product__button"><a href="./pages/menu.html">VIEW ALL</a></button>
-
             </div>
 
+            <div class="product__button--container">  
+            <button class="product__button"><a href="./pages/menu.html">VIEW ALL</a></button>
+            <div class="product__button--frame"></div>
+            </div>
+
+            
         </section>
 
-<!-- discount section: Q? not sure how to rename -->
+
         <section class="content article">
-            <div class="content__container">
+        <div class="content__container">
 
             <div class="content__desc">
                 <h1 class="content__desc--header">We're Different</h1>
@@ -130,21 +136,23 @@
                     <img src="./assets/logos/coffee-beans.svg" alt="coffee beans" class="content__desc--img middle">
                     <img src="./assets/logos/coffee-cup.svg" alt="coffee cup" class="content__desc--img">
                 </div>
-                <button class="button">LEARN MORE</button>
-
+                <div class="content__button--container">
+                <button class="content__button">LEARN MORE</button>
+                <div class="content__button--frame"></div>
+                </div>
             </div>
 
-                
-             <div class="content__pic--container"> 
+            <div class="content__pic--container"> 
+                <div class="content__pic--frame"></div>
                 <img src="./assets/images/tiltedcan.png" alt="" class="content__picture">
-             </div>   
-            </div>  
-                
-                <div class="content__banner--container">
+            </div>
+            </div>
+             
+            <div class="content__banner--container">
                 <div class="content__banner">
                     <p  class="content__banner--text">Get 20% off your first order with code: <strong>FirstNitro</strong></p>
                 </div>
-                </div>
+            </div>
             
         </section>
     </main>
@@ -157,7 +165,8 @@
 
     <footer class="footer">
         <!-- address section -->
-            <div class="footer__element">
+        <div class="footer__image"><img src="./assets/logos/coffee-beans-logo-and-footer.svg" alt=""></div>
+        <div class="footer__element">
                 <h3 class="footer__element--header">Address</h3>
                 <p class ="footer__element--text">503 Braodway Penthouse</p>
                 <p>New York</p>
@@ -185,7 +194,7 @@
                     <img src="./assets/logos/Instagram-Icon.svg" alt="instagram" class="footer__resize--image">
                 </a>
             </div>
-
+            <div class="footer__image--right"><img src="./assets/logos/coffee-beans-logo-and-footer.svg" alt=""></div>
     </footer>
 
 

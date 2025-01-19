@@ -1,0 +1,199 @@
+@use './partials/global' as *;
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+@use './partials/header';
+@use './partials/nav';
+
+.hero {
+  position: relative;
+  background-color: $primary-color2;
+  @include size(90rem, 100%);
+  @include flex(row, space-evenly, center);
+  @include background-style;
+
+  &__content {
+    width: 20%;
+    font-weight: 200;
+  }
+
+  &__img {
+    height: 76rem;
+    object-fit: contain;
+  }
+
+  &__button {
+    @include button-style;
+    text-align: center;
+    margin-top: 20px;
+    
+    a {
+      color: $secondary-color4;
+      
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+.content {
+  &__card {
+    background-color: $secondary-color3;
+  }
+
+  &__container {
+    @include flex(row, space-around, center);
+    height: 80rem;
+  }
+
+  &__pic--container {
+    background-image: url(../assets/images/coldbrewbackground.png);
+    @include size(60rem, 60rem);
+    background-size: contain;
+    @include flex(row, center, center);
+  }
+
+  &__picture {
+    height: 40rem;
+  }
+
+  &__desc {
+    background-color: $secondary-color4;
+    width: 40%;
+    @include flex(column, center, flex-start);
+    gap: 2rem;
+
+    &--text {
+      width: 80%;
+      margin-top: 2.5rem;
+    }
+
+    &--image {
+      @include flex(row, space-between, center);
+      width: 100%;
+    }
+
+    &--img {
+      height: 7rem;
+
+      &.middle {
+        padding: 0 25%;
+      }
+    }
+  }
+
+  &__banner {
+    background-color: $secondary-color1;
+    color: $secondary-color4;
+    text-align: center;
+    width: 85%;
+    @include size(16rem, auto);
+    padding: 20px;
+
+    &--container {
+      @include flex(row, center, center);
+      height: 40rem;
+    }
+
+    &--text {
+      font-size: 6rem;
+    }
+  }
+}
+
+.card {
+  background-color: $secondary-color4;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px -1px rgba(109, 103, 103, 0.25);
+  @include size(53rem, 38rem);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+
+  &__headline {
+    text-align: center;
+    background-color: $secondary-color3;
+  }
+
+  &__container {
+    @include size(66rem, 100%);
+    @include flex(row, center, center);
+    background-color: $secondary-color3;
+  }
+
+  &__content {
+    background-color: $primary-color2;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 9px -1px rgba(109, 103, 103, 0.25);
+    text-align: center;
+    font-weight: 200;
+    @include size(16rem, 100%);
+    @include flex(row, center, center);
+    margin-top: 29px;
+  }
+
+  &__list {
+    @include padding-border(0.5rem, 2rem);
+    @include flex(row, space-around, center);
+    list-style-type: none;
+    font-size: 3rem;
+    margin-left: 8px;
+    text-align: left;
+
+    &--word {
+      font-size: 2.5rem;
+      font-weight: 100;
+      color: $secondary-color2;
+    }
+
+    &--price {
+      font-size: 4rem;
+      margin-left: 20px;
+      color: $primary-color1;
+      font-weight: 700;
+    }
+  }
+
+  &__img {
+    height: 32rem;
+    padding-top: 15px;
+  }
+}
+
+.footer {
+  background-color: $primary-color2;
+  width: 100%;
+  @include size(30rem, 100%);
+  @include flex(row, space-around, center);
+
+  &__element {
+    text-align: left;
+
+    &--header {
+      margin-bottom: 10px;
+    }
+
+    &--text {
+      color: $secondary-color1;
+    }
+  }
+
+  &__resize--image {
+    @include size(4.5rem, 5rem);
+    margin: 0;
+  }
+}
+
+.button {
+  @include button-style;
+  font-size: 3rem;
+}
+
+.product__button {
+  @include button-style;
+  
+  a {
+    color: $secondary-color4;
+  }
+}

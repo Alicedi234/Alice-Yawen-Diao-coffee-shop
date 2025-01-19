@@ -1,0 +1,42 @@
+@use './mixins' as *;
+@use './variables' as *;
+
+.header {
+  @include flex(row, flex-start, stretch);
+  background-color: $primary-color2;
+  
+  &__nav {
+    @include flex(row, space-evenly, center);
+    font-size: 3rem;
+    list-style: none;
+    width: 37%;
+    
+    &--highlight {
+      color: $primary-color1;
+      @include padding-border(0.3rem, 2rem);
+    }
+    
+    &--container {
+      width: 100%;
+      @include flex(row, end, stretch);
+    }
+  }
+
+  a {
+    color: $secondary-color1;
+    
+    &:hover {
+      color: $primary-color1;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

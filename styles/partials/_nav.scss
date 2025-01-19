@@ -1,0 +1,57 @@
+@use './mixins' as *;
+@use './variables' as *;
+
+.header {
+  &__nav {
+    width: 100%;
+    background-color: $secondary-color1;
+  }
+
+  &__list {
+    @include flex(row, center, center);
+    list-style: none;
+    padding: 2rem 0;
+    gap: 5rem;
+    
+    &--item {
+      color: $secondary-color4;
+      @include padding-border;
+      
+      &2 {
+        color: $secondary-color4;
+      }
+    }
+  }
+}
+
+.hero {
+  &__nav {
+    width: 100%;
+    background-color: $secondary-color1;
+  }
+
+  &__list {
+    @include flex(row, center, center);
+    list-style: none;
+    padding: 2rem 0;
+    gap: 5rem;
+    background-color: $secondary-color1;
+    
+    &--item {
+      color: $secondary-color4;
+      @include padding-border;
+      
+      a {
+        color: $secondary-color4;
+        
+        &:hover {
+          color: $primary-color1;
+        }
+      }
+      
+      &2 {
+        color: $secondary-color4;
+      }
+    }
+  }
+}
