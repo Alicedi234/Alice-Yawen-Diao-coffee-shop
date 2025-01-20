@@ -4,6 +4,70 @@
 @use './partials/header';
 @use './partials/nav';
 
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-size: 10rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  background-color: #FFF0ED;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 3rem;
+  list-style: none;
+  width: 37%;
+}
+
+.header__nav--highlight {
+  color: #5BACC3;
+}
+
+.header__nav--container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: stretch;
+}
+
 .hero {
   position: relative;
   background-color: $primary-color2;
@@ -25,6 +89,7 @@
     @include button-style;
     text-align: center;
     margin-top: 20px;
+    color:white;
     
     a {
       color: $secondary-color4;
@@ -33,6 +98,58 @@
         opacity: 0.9;
       }
     }
+  }
+
+  &__button--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  &__button--container:hover .hero__button {
+    background-color: #5BACC3;
+    color: white;
+    width: 26rem;
+    font-size: 3.5rem;
+    height: 7rem;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #393939;
+  }
+
+  &__button--container:hover .hero__button--frame {
+    border: none;
+  }
+
+  &__button--link {
+    z-index: 2;
+    text-align: center;
+  }
+
+  &__button {
+    background-color: #5BACC3;
+    color: white;
+    width: 26rem;
+    font-size: 3.5rem;
+    height: 7rem;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  &__button--frame {
+    width: 26rem;
+    height: 7rem;
+    border: 2px solid #393939;
+    position: relative;
+    left: -135px;
+    top: 5px;
+    z-index: 0;
   }
 }
 
@@ -196,4 +313,99 @@
   a {
     color: $secondary-color4;
   }
+}
+
+.product {
+  background-color: peru;
+  background-position: cover;
+  list-style: none;
+}
+
+.content__banner--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+}
+
+.content__banner {
+  background-color: #393939;
+  color: white;
+  text-align: center;
+  width: 85%;
+  padding: 20px;
+  height: 16rem;
+  font-size: 50rem;
+  animation: flashing 2.5s infinite;
+}
+
+@keyframes flashing {
+  0% {
+    background-color: #393939;
+  }
+
+  50% {
+    background-color: #4E8FA0;
+  }
+
+  75% {
+    background-color: #669BAA;
+  }
+
+  100% {
+    background-color: #4A9FB5;
+  }
+}
+
+.content__desc--text {
+  width: 80%;
+  margin-top: 2.5rem;
+}
+
+.content__desc--image {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content__desc--img {
+  height: 7rem;
+}
+
+.content__button--container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.content__button {
+  background-color: #5BACC3;
+  color: white;
+  width: 26rem;
+  font-size: 3.5rem;
+  height: 7rem;
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.content__button--frame {
+  width: 26rem;
+  height: 7rem;
+  border: 1px solid #393939;
+  position: relative;
+  left: -132px;
+  top: 8px;
+}
+
+.middle {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.product__button--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

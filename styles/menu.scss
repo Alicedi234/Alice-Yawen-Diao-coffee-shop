@@ -1,0 +1,162 @@
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+
+// Global styles
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-size: 10rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+p {
+  font-size: 3rem;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
+// Header styles
+.header {
+  @include flex(row, flex-start, stretch);
+  background-color: $primary-color2;
+
+  &__nav {
+    @include flex(row, space-evenly, center);
+    font-size: 3rem;
+    list-style: none;
+    width: 37%;
+
+    &--highlight {
+      color: $primary-color1;
+      @include padding-border(0.3rem, 2rem);
+    }
+  }
+
+  &__nav--container {
+    width: 100%;
+    @include flex(row, end, stretch);
+  }
+
+  a {
+    color: $secondary-color1;
+
+    &:hover {
+      color: $primary-color1;
+    }
+  }
+}
+
+// Hero styles
+.hero__background {
+  background-image: url(../assets/images/coffee-circle.jpg);
+  width: 100%;
+  height: 90rem;
+  @include flex(center, center);
+  @include background-style;
+  position: relative;
+
+  &__box {
+    background-color: $secondary-color1;
+    color: $secondary-color4;
+    height: 30rem;
+    width: 45rem;
+    @include flex(center, center);
+    position: relative;
+    z-index: 1;
+    left: -23rem;
+    top: 3rem;
+  }
+
+  &--frame {
+    height: 30rem;
+    width: 45rem;
+    border: 4px solid $primary-color1;
+    z-index: 2;
+    position: relative;
+    left: 20rem;
+    top: 1rem;
+  }
+}
+
+.hero__list {
+  color: rgb(19, 21, 20);
+  text-align: center;
+  width: 100%;
+  font-size: 4rem;
+  height: 9rem;
+  @include flex(row, center, center);
+  padding-top: 1rem;
+  text-transform: uppercase;
+  list-style-type: none;
+  background-color: $secondary-color1;
+
+  &--item {
+    color: $secondary-color4;
+    @include padding-border;
+    margin-right: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &--item2 {
+    color: $secondary-color4;
+    margin-right: 5rem;
+    margin-top: 1rem;
+  }
+}
+
+// Section styles
+.section {
+  background-color: $primary-color2;
+  color: $secondary-color1;
+  width: 100%;
+  height: 75rem;
+  @include background-style;
+  text-align: center;
+  @include flex(column, center);
+
+  &__middle {
+    background-color: $secondary-color3;
+  }
+
+  &__desc {
+    font-style: italic;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  &__price {
+    color: $primary-color1;
+    font-style: normal;
+  }
+
+  &__header {
+    margin-bottom: 7rem;
+  }
+}
+
