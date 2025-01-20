@@ -92,6 +92,22 @@ justify-content: center;
 align-items: center;  
 position: relative;
 }
+.hero__button--container:hover .hero__button{
+  background-color: #5BACC3;
+  color: white;
+  width: 26rem;
+  font-size: 3.5rem;
+  height: 7rem;
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  border:2px solid #393939;
+}
+.hero__button--container:hover .hero__button--frame{
+border: none;
+}
+
 
 .hero__button {
   background-color: #5BACC3;
@@ -102,16 +118,22 @@ position: relative;
   text-align: center;
   margin-top: 20px;
   position: relative;
+  overflow: hidden;   
 }
+
+
+
+
 
 .hero__button--frame{
   width: 26rem;
   height:7rem;
-  border: 1px solid #393939;
+  border: 2px solid #393939;
   position: relative;
   left:-132px;
   top:8px;
 }
+
 
 
 
@@ -198,26 +220,28 @@ position: relative;
   text-align: center;
   background-color: #F7F7F7;
   display: flex;
- justify-content: center;
- align-items: center;
- position: relative;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .product__button {
   background-color: #5BACC3;
   color: white;
   width: 26rem;
-  font-size: 3.5rem;
+  font-size: 4rem;
   height: 7rem;
   position: relative;
+  text-align: center;
 }
-.product__button--frame{
+
+.product__button--frame {
   width: 26rem;
-  height:7rem;
+  height: 7rem;
   border: 1px solid #393939;
   position: relative;
-  left:-132px;
-  top:-2px;
+  left: -134px;
+  top: -3px;
   position: relative;
 }
 
@@ -248,23 +272,39 @@ position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
+.content__pic--container:hover .content__picture{
+  animation: rotate 3s infinite;
+  transform: rotate(360deg);
+}
+
+
 .content__pic--frame{
   width: 60rem;
   height: 60rem;
-  border:2px solid #5BACC3;
+  border:4px solid #5BACC3;
   position: absolute;
-  right:127px;
-  top:44px;
+  right:143px;
+  top:40px;
   
 }
 
 .content__picture {
   height: 40rem;
-  margin-right:5rem;
+  margin-right:o auto;
 }
+
+@keyframes rotate{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
 
 .content__desc {
   background-color: white;
@@ -291,7 +331,7 @@ position: relative;
 }
 .content__button--container{
 display: flex;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;  
 position: relative;
 
@@ -316,8 +356,6 @@ position: relative;
   left:-132px;
   top:8px;
 }
-
-
 
 
 
@@ -350,7 +388,29 @@ position: relative;
   height: 16rem;
   /* padding-top: 1.5rem; */
   font-size: 50rem;
+  animation: flashing 2.5s infinite;
 }
+@keyframes flashing{
+  0% {
+    background-color: #393939;
+  }
+
+  50% {
+    background-color: #4E8FA0;
+  }
+
+  75% {
+    background-color: #669BAA
+  }
+
+  100% {
+    background-color: #4A9FB5
+  }
+}
+
+
+
+
 
 .content__banner--text {
   font-size: 6rem;
@@ -393,3 +453,4 @@ position: relative;
   left:30rem;
   top:4rem;
 }
+
