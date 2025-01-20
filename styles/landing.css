@@ -108,7 +108,10 @@ position: relative;
 border: none;
 }
 
-
+.hero__button--link{
+  z-index: 1;
+  text-align: center;
+}
 .hero__button {
   background-color: #5BACC3;
   color: white;
@@ -120,18 +123,15 @@ border: none;
   position: relative;
   overflow: hidden;   
 }
-
-
-
-
+  
 
 .hero__button--frame{
   width: 26rem;
   height:7rem;
-  border: 2px solid #393939;
+  border: 2px solid #393939; 
   position: relative;
-  left:-132px;
-  top:8px;
+  left:-126px;
+  top:5px;
 }
 
 
@@ -356,6 +356,8 @@ position: relative;
   left:-132px;
   top:8px;
 }
+
+
 
 
 
